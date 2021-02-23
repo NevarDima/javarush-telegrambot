@@ -6,7 +6,9 @@ package com.github.javarushcommunity.jrtb.command;
 public enum CommandName {
 
     START("/start"),
-    STOP("/stop");
+    STOP("/stop"),
+    HELP("/help"),
+    NO("[a-zA-Z]");
 
     private final String commandName;
 
