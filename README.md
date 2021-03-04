@@ -38,3 +38,16 @@ This project is Apache License 2.0 - see the [LICENSE](LICENSE) file for details
 # Contributions
 Feel free to suggest new features via [github issue](https://github.com/javarushcommunity/javarush-telegrambot/issues/new).
 Note, that new features must be approved before start implement it to avoid the situation, when the time was spent, but the changes wouldn't added to the project.
+
+## Deployment
+Deployment process as easy as possible:
+Required software:
+- terminal for running bash scripts
+- docker
+- docker-compose
+
+to deploy application, switch to needed branch and run bash script:
+
+$ bash start.sh ${bot_username} ${bot_token}
+
+That's all.
