@@ -15,6 +15,7 @@
 	<description>Telegram bot for Javarush from community to community</description>
 	<properties>
 		<java.version>11</java.version>
+		<unirest.version>3.11.01</unirest.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -60,6 +61,12 @@
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
+		</dependency>
+
+		<dependency>
+			<groupId>com.konghq</groupId>
+			<artifactId>unirest-java</artifactId>
+			<version>${unirest.version}</version>
 		</dependency>
 	</dependencies>
 
