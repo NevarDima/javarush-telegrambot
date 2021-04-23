@@ -1,4 +1,4 @@
-package com.github.javarushcommunity.jrtb.javarushclient.dto;
+package com.github.javarushcommunity.jrtb.javarushclient;
 
 import com.github.javarushcommunity.jrtb.javarushclient.dto.GroupDiscussionInfo;
 import com.github.javarushcommunity.jrtb.javarushclient.dto.GroupInfo;
@@ -16,15 +16,15 @@ import java.util.List;
  */
 @Component
 public class JavaRushGroupClientImpl implements JavaRushGroupClient{
-    private final String javarushApiGroupPath;
+    private final String javaRushApiGroupPath;
 
     public JavaRushGroupClientImpl(@Value("${javarush.api.path}") String javarushApi) {
-        this.javarushApiGroupPath = javarushApi + "/groups";
+        this.javaRushApiGroupPath = javarushApi + "/groups";
     }
 
     @Override
     public List<GroupInfo> getGroupList(GroupRequestArgs requestArgs) {
-        return Unirest.get(javarushApiGroupPath)
+        return Unirest.get(javaRushApiGroupPath)
                 .queryString(requestArgs.populateQueries())
                 .asObject(new GenericType<List<GroupInfo>>(){
                 })
@@ -33,7 +33,7 @@ public class JavaRushGroupClientImpl implements JavaRushGroupClient{
 
     @Override
     public List<GroupDiscussionInfo> getGroupDiscussionList(GroupRequestArgs requestArgs) {
-        return Unirest.get(javarushApiGroupPath)
+        return Unirest.get(javaRushApiGroupPath)
                 .queryString(requestArgs.populateQueries())
                 .asObject(new GenericType<List<GroupDiscussionInfo>>(){
                 })
@@ -43,7 +43,7 @@ public class JavaRushGroupClientImpl implements JavaRushGroupClient{
     @Override
     public Integer getGroupCount(GroupsCountRequestArgs countRequestArgs) {
         return Integer.valueOf(
-                Unirest.get(String.format("%s/count", javarushApiGroupPath))
+                Unirest.get(String.format("%s/count", javaRushApiGroupPath))
                         .queryString(countRequestArgs.populateQueries())
                         .asString()
                         .getBody()
@@ -52,7 +52,7 @@ public class JavaRushGroupClientImpl implements JavaRushGroupClient{
 
     @Override
     public GroupDiscussionInfo getGroupById(Integer id) {
-        return Unirest.get(String.format("%s/group%s", javarushApiGroupPath, id.toString()))
+        return Unirest.get(String.format("%s/group%s", javaRushApiGroupPath, id.toString()))
                 .asObject(GroupDiscussionInfo.class)
                 .getBody();
     }

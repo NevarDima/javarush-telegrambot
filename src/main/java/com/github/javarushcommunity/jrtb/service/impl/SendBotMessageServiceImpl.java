@@ -1,6 +1,7 @@
-package com.github.javarushcommunity.jrtb.service;
+package com.github.javarushcommunity.jrtb.service.impl;
 
 import com.github.javarushcommunity.jrtb.bot.JavaRushTelegramBot;
+import com.github.javarushcommunity.jrtb.service.SendBotMessageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;

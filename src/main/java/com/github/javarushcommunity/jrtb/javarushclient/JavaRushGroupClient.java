@@ -1,4 +1,4 @@
-package com.github.javarushcommunity.jrtb.javarushclient.dto;
+package com.github.javarushcommunity.jrtb.javarushclient;
 
 import com.github.javarushcommunity.jrtb.javarushclient.dto.GroupDiscussionInfo;
 import com.github.javarushcommunity.jrtb.javarushclient.dto.GroupInfo;
@@ -17,7 +17,7 @@ public interface JavaRushGroupClient {
      * @param requestArgs provided {@link GroupRequestArgs}.
      * @return the collection of the {@link GroupInfo} objects.
      */
-    List getGroupList(GroupRequestArgs requestArgs);
+    List<GroupInfo> getGroupList(GroupRequestArgs requestArgs);
 
     /**
      * Get all the {@link GroupDiscussionInfo} filtered by provided {@link GroupRequestArgs}.
@@ -25,7 +25,7 @@ public interface JavaRushGroupClient {
      * @param requestArgs provided {@link GroupRequestArgs}
      * @return the collection of the {@link GroupDiscussionInfo} objects.
      */
-    List getGroupDiscussionList(GroupRequestArgs requestArgs);
+    List<GroupDiscussionInfo> getGroupDiscussionList(GroupRequestArgs requestArgs);
 
     /**
      * Get count of groups filtered by provided {@link GroupRequestArgs}.
