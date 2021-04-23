@@ -2,7 +2,7 @@ package com.github.javarushcommunity.jrtb.command;
 
 import com.github.javarushcommunity.jrtb.bot.JavaRushTelegramBot;
 import com.github.javarushcommunity.jrtb.service.SendBotMessageService;
-import com.github.javarushcommunity.jrtb.service.SendBotMessageServiceImpl;
+import com.github.javarushcommunity.jrtb.service.impl.SendBotMessageServiceImpl;
 import com.github.javarushcommunity.jrtb.service.TelegramUserService;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
