@@ -1,5 +1,6 @@
-package com.github.javarushcommunity.jrtb.javarushclient;
+package com.github.javarushcommunity.jrtb.javarushclient.impl;
 
+import com.github.javarushcommunity.jrtb.javarushclient.JavaRushGroupClient;
 import com.github.javarushcommunity.jrtb.javarushclient.dto.GroupDiscussionInfo;
 import com.github.javarushcommunity.jrtb.javarushclient.dto.GroupInfo;
 import com.github.javarushcommunity.jrtb.javarushclient.dto.GroupRequestArgs;

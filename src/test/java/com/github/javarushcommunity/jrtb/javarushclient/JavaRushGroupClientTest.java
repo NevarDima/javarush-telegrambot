@@ -1,7 +1,10 @@
-package com.github.javarushcommunity.jrtb.javarushclient.dto;
+package com.github.javarushcommunity.jrtb.javarushclient;
 
 import com.github.javarushcommunity.jrtb.javarushclient.JavaRushGroupClient;
-import com.github.javarushcommunity.jrtb.javarushclient.JavaRushGroupClientImpl;
+import com.github.javarushcommunity.jrtb.javarushclient.dto.GroupDiscussionInfo;
+import com.github.javarushcommunity.jrtb.javarushclient.dto.GroupRequestArgs;
+import com.github.javarushcommunity.jrtb.javarushclient.dto.GroupsCountRequestArgs;
+import com.github.javarushcommunity.jrtb.javarushclient.impl.JavaRushGroupClientImpl;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
