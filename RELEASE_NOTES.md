@@ -1,4 +1,7 @@
 # Release Notes
+## 0.7.0-SNAPSHOT
+
+*   JRTB-4: added ability to find new articles and send notifications about new of them
 
 ## 0.6.0-SNAPSHOT
 
