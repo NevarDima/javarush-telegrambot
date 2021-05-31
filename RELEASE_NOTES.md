@@ -1,5 +1,9 @@
 # Release Notes
 
+## 0.9.0-SNAPSHOT
+
+*   JRTB-10: extended bot statistics for admins.
+
 ## 0.8.0-SNAPSHOT
 
 *   JRTB-8: added ability to set inactive telegram user
