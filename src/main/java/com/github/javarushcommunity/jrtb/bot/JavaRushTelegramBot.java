@@ -33,7 +33,12 @@ public class JavaRushTelegramBot extends TelegramLongPollingBot {
     private final CommandContainer commandContainer;
 
     @Autowired
-    public JavaRushTelegramBot(TelegramUserService telegramUserService, JavaRushGroupClient groupClient, GroupSubService groupSubService, @Value("#{'${bot.admins}'.split(',')}") List<String> admins, StatisticsService statisticsService) {
+    public JavaRushTelegramBot(TelegramUserService telegramUserService,
+                               JavaRushGroupClient groupClient,
+                               GroupSubService groupSubService,
+                               @Value("#{'${bot.admins}'.split(',')}") List<String> admins,
+                               StatisticsService statisticsService) {
+
         this.commandContainer = new CommandContainer(
                 new SendBotMessageServiceImpl(this),
                 telegramUserService,

@@ -8,8 +8,6 @@ import com.github.javarushcommunity.jrtb.service.StatisticsService;
 import com.github.javarushcommunity.jrtb.service.TelegramUserService;
 import com.google.common.collect.ImmutableMap;
 
-import javax.validation.constraints.NotNull;
-
 import java.util.List;
 
 import static com.github.javarushcommunity.jrtb.command.CommandName.*;
