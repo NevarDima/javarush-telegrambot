@@ -23,7 +23,12 @@ public class CommandContainer {
     private final Command unknownCommand;
     private final List<String> admins;
 
-    public CommandContainer(SendBotMessageService sendBotMessageService, TelegramUserService telegramUserService, JavaRushGroupClient javaRushGroupClient, GroupSubService groupSubService, List<String> admins, StatisticsService statisticsService) {
+    public CommandContainer(SendBotMessageService sendBotMessageService,
+                            TelegramUserService telegramUserService,
+                            JavaRushGroupClient javaRushGroupClient,
+                            GroupSubService groupSubService,
+                            List<String> admins,
+                            StatisticsService statisticsService) {
 
         this.admins = admins;
 
