@@ -4,21 +4,21 @@
 JavaRush Telegram bot from community for community. Written by developers, who learned in [Javarush](https://javarush.ru).
 ## Idea
 The main idea is to show how to create real application, which can be used by someone else. 
-There are [set of articles](https://javarush.ru/groups/posts/2935-java-proekt-ot-a-do-ja-pishem-realjhnihy-proekt-dlja-portfolio), which are describing step by step guidelines of how it was created.
+There are [set of posts](https://javarush.ru/groups/posts/2935-java-proekt-ot-a-do-ja-pishem-realjhnihy-proekt-dlja-portfolio), which are describing step by step guidelines of how it was created.
 ## MVP Scope
-As a user, I want to subscribe on group of articles and get notification via telegram-bot every time, 
-when new article, related to group subscriptions, has come.
+As a user, I want to subscribe on group of posts and get notification via telegram-bot every time, 
+when new post, related to group subscriptions, has come.
 
 # How it would work 
 Based on MVP Scope, we can specify next behaviours (here and after Telegram User, which is using JavaRush Telgegram bot will call User):
-- User can subscribe on group of articles
+- User can subscribe on group of posts
 - User can view list of gorup subscriptions on which user subscribes
-- User can unsubscribe from gorup of articles
+- User can unsubscribe from gorup of posts
 - User can set an inactive bot and do not receive notifications
 - User can restart gettting notifications
-## Find new articles workflow
-The workflow of finding new articles and send them to subscribers can be viewed here:
-![Find_New_Articles_WF](https://user-images.githubusercontent.com/16310793/103340221-62bb5400-4a38-11eb-947f-c28ce8ecad1b.png)
+## Find new posts workflow
+The workflow of finding new posts and send them to subscribers can be viewed here:
+![Find_New_Posts_WF](https://user-images.githubusercontent.com/16310793/103340221-62bb5400-4a38-11eb-947f-c28ce8ecad1b.png)
 
 # Technological stack
 - SpringBoot as a skeleton framework
