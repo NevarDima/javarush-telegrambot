@@ -10,9 +10,9 @@
 	</parent>
 	<groupId>com.github.javarushcommunity</groupId>
 	<artifactId>javarush-telegrambot</artifactId>
-	<version>0.9.0-SNAPSHOT</version>
-	<name>Javarush TelegramBot</name>
-	<description>Telegram bot for Javarush from community to community</description>
+	<version>1.0.0-SNAPSHOT</version>
+	<name>JavaRush TelegramBot</name>
+	<description>Telegram bot for JavaRush from community to community</description>
 	<properties>
 		<java.version>11</java.version>
 		<unirest.version>3.11.01</unirest.version>
@@ -88,6 +88,17 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.22.2</version>
+			</plugin>
+
+			<plugin>
+				<groupId>com.heroku.sdk</groupId>
+				<artifactId>heroku-maven-plugin</artifactId>
+				<version>3.0.4</version>
+				<configuration>
+					<processTypes>
+						<web>java $JAVA_OPTS -cp target/classes:target/dependency/* JavarushTelegramBotApplication</web>
+					</processTypes>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
