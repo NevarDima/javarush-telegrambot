@@ -1,3 +1,3 @@
-ALTER TABLE group_x_user DROP FOREIGN KEY group_x_user_ibfk_1;
-ALTER TABLE tg_user MODIFY chat_id BIGINT;
-ALTER TABLE group_x_user ADD FOREIGN KEY (user_id) REFERENCES tg_user(chat_id);
+--ALTER TABLE group_x_user DROP FOREIGN KEY group_x_user_ibfk_3;
+--ALTER TABLE tg_user MODIFY chat_id BIGINT;
+--ALTER TABLE group_x_user ADD FOREIGN KEY (user_id) REFERENCES tg_user(chat_id);
